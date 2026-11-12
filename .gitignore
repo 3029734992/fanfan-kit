@@ -1,0 +1,22 @@
+# ===== .NET / C# 编译产物 =====
+dist/
+bin/
+obj/
+*.user
+*.suo
+*.cache
+
+# ===== Visual Studio =====
+.vs/
+.vscode/
+*.sln
+*.csproj
+
+# ===== 临时 / 系统 =====
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
+
+# ===== 发布 zip（桌面是个人打包区，不入库） =====
+*.zip
