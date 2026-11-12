@@ -178,7 +178,7 @@ namespace ClassLock
                     "监听端口：" + Cfg.Port + "（TCP）\r\n\r\n" +
                     "教师端的“教室组号”必须填成一样的，才能控制本机。\r\n" +
                     "以后每次开机都会自动运行，不需要再安装。\r\n" +
-                    "如需改组号，用管理员运行：Student.exe /room 新组号\r\n" +
+                    "如需改组号，用管理员运行：ClassroomControl.exe /room 新组号\r\n" +
                     "如需卸载，请以管理员身份运行本程序并加参数 /uninstall。",
                     Cfg.ProductName + " - 安装成功", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
@@ -194,7 +194,7 @@ namespace ClassLock
         {
             if (room == null)
             {
-                MessageBox.Show("用法：Student.exe /room 教室组号\r\n例如：Student.exe /room 301",
+                MessageBox.Show("用法：ClassroomControl.exe /room 教室组号\r\n例如：ClassroomControl.exe /room 301",
                     Cfg.ProductName + " - 教室组号", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
